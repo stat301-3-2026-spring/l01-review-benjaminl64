@@ -39,19 +39,18 @@ When completing the following questions ensure your solutions are neatly formatt
 
 ### Question 1
 
-Provide a brief outline/overview of the steps involved in a supervised machine learning process. Could provide this as a bulleted list. 
+Provide a brief outline/overview of the steps involved in a supervised machine learning process. Could provide this as a bulleted list.
 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-- EDA
-- Split / CV
-- Data preprocessing and feature engineering
-- Choose models
-- Tune hyperparameters
-- Find best performing models
-- Evaluate on testing set
-
+-   EDA
+-   Split / CV
+-   Data preprocessing and feature engineering
+-   Choose models
+-   Tune hyperparameters
+-   Find best performing models
+-   Evaluate on testing set
 :::
 
 ### Question 2
@@ -61,23 +60,21 @@ Explain the difference between supervised and unsupervised learning.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-Supervised learning involves data that is labeled and a model attempting to operate using the labeled data to either classify or regress on a known outcome variable. 
+Supervised learning involves data that is labeled and a model attempting to operate using the labeled data to either classify or regress on a known outcome variable.
 
 Unsupervised learning involves data that is unlabeled and a model attempting to detect patterns in the data without using any labels and outcome variables.
-
 :::
 
-### Question 3 
+### Question 3
 
 In general, we can classify a model by its purpose into 1 of the 3 categories below. Provide a brief description of the goals of these model classes.
 
-#### Descriptive Models 
+#### Descriptive Models
 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-Descriptive models look to describe existing relationships in the data. 
-
+Descriptive models look to describe existing relationships in the data.
 :::
 
 #### Inferential Models
@@ -86,7 +83,6 @@ Descriptive models look to describe existing relationships in the data.
 ## Solution
 
 Inferential models evaluate the significance of certain hypothesis.
-
 :::
 
 #### Predictive Models
@@ -95,12 +91,11 @@ Inferential models evaluate the significance of certain hypothesis.
 ## Solution
 
 Predictive models use different model types to form a prediction on new data.
-
 :::
 
-### Question 4 
+### Question 4
 
-We can further describe/classify predictive models by how they were derived or developed as being either mechanistic or empirically driven. 
+We can further describe/classify predictive models by how they were derived or developed as being either mechanistic or empirically driven.
 
 #### Part (a)
 
@@ -110,7 +105,6 @@ What does it mean to be a mechanistic model?
 ## Solution
 
 Mechanistic models use a known formulas and assumptions to most accurately represent the data.
-
 :::
 
 #### Part (b)
@@ -121,18 +115,16 @@ What does it mean to be an empirically driven model?
 ## Solution
 
 Empirically driven models use the data as the information in analysis.
-
 :::
 
 #### Part (c)
 
-How does the mechanistic and empirically driven model terminology relate to the parametric and nonparametric model terminology? 
+How does the mechanistic and empirically driven model terminology relate to the parametric and nonparametric model terminology?
 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+We formally defined mechanistic and parametric models as roughly equivalent, using a formula to characterize the data. We defined empirically driven as equivalent to nonparametric, using the data to create a model.
 :::
 
 #### Part (d)
@@ -142,8 +134,7 @@ In general, is a mechanistic or empirically driven model easier to interpret? Ex
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+Generally, mechanistic models are easier to interpret due to their known formulas and are often simpler. Empirically driven models are harder to interpret due to their black-box nature.
 :::
 
 #### Part (e)
@@ -153,52 +144,47 @@ How does mechanistic and empirically driven model terminology relate to the idea
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+Empirically driven models tend to be more flexible, as they are formed based off of the data itself, whereas mechanistic models have set formulas that are often limiting if the data do not behave in a favorable way.
 :::
 
 #### Part (f)
 
-Describe the bias-variance trade-off when considering the use of a mechanistic or empirically driven model. 
+Describe the bias-variance trade-off when considering the use of a mechanistic or empirically driven model.
 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+Bias-variance trade-off involves the level of complexity of the model. If a model is too simple, it misrepresents the data, and increases the bias, leading to underfitting. If a model is too complex, the variance increases, leading to overfitting. Our goal in modeling is to minimize both.
 :::
 
-### Question 5 
+### Question 5
 
 Explain the difference between a regression and classification machine learning (ML) problems.
 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+Regression ML characterizes a continuous outcome variable, while classification characterizes binary or multinomial variables.
 :::
 
-### Question 6 
+### Question 6
 
-When splitting the data, why is it useful to stratify by the outcome/target variable? 
+When splitting the data, why is it useful to stratify by the outcome/target variable?
 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+Stratification is useful for ensuring that the data are accurately represented within the sample, as pure random sampling has the chance of misrepresenting the original data.
 :::
 
-### Question 7 
+### Question 7
 
-Briefly describe how v-fold cross validation with repeats is used to estimate test RMSE. Also provide an explanation of why we use it. 
+Briefly describe how v-fold cross validation with repeats is used to estimate test RMSE. Also provide an explanation of why we use it.
 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+v-fold cross validation divides the data into v number of folds and uses v-1 folds for training and 1 fold to test the model. This is repeated with random sampling however many times is desired, and the average of the RMSE values is calculated. We use v-fold cv to reduce overfitting and variance.
 :::
 
 ### Question 8
@@ -208,30 +194,27 @@ When might we use a bootstrap resampling procedure instead of v-fold cross valid
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+Bootstrap sampling is preferred when the sample size is relatively small, as cross validation splits the data into folds, which would be ineffective on extremely small datasets. Bootstrap resamples with replacement, which is more effective in this case.
 :::
 
-### Question 9 
+### Question 9
 
 Briefly describe model tuning and why we use it.
 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+Model tuning is running models with varying sets of hyperparameters to develop a more accurate characterization of the data. We tune models to reduce the likelihood of overfitting the data.
 :::
 
-### Question 10 
+### Question 10
 
 What are two common performance metrics when dealing with a regression ML problem?
 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+Two common metrics we have learned for regression problems are Root mean squared error and R-squared.
 :::
 
 What are two common performance metrics when dealing with a classification ML problem?
@@ -239,8 +222,7 @@ What are two common performance metrics when dealing with a classification ML pr
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+The two common performance metrics we have learned for classification are accuracy and area under the receiver operating characteristic curve.
 :::
 
 ### Question 11
@@ -249,21 +231,18 @@ Classify each question/problem below as either prediction or inferential. Explai
 
 A company with a subscription based service (for example Netflix, Disney+, New York Times, etc) has data concerning customer interactions with a them, including features like the number of customer service calls, quality of service calls, subscription length, engagement with the service, discounted service, etc. They are interested in two questions:
 
-1. Does a high number of service calls impact a customer's likelihood of churn in the next month (leave the company/drop the service)?
+1.  Does a high number of service calls impact a customer's likelihood of churn in the next month (leave the company/drop the service)?
 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+This is an inferential problem, addressing whether high number of service calls significantly impacts likelihood of churn.
 :::
 
-2. How likely is it that a customer will churn in the next month (leave the company/drop the service)?
+2.  How likely is it that a customer will churn in the next month (leave the company/drop the service)?
 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+This is a prediction problem predicting the probability of a customer churning.
 :::
-
