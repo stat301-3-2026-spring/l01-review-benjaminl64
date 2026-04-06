@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Benjamin Lin">
-<meta name="dcterms.date" content="2026-03-31">
+<meta name="dcterms.date" content="2026-04-05">
 
 <title>L01 Benjamin Lin</title>
 <style>
@@ -2229,7 +2229,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 31, 2026</p>
+      <p class="date">April 5, 2026</p>
     </div>
   </div>
   
@@ -2274,7 +2274,15 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<ul>
+<li>EDA</li>
+<li>Split / CV</li>
+<li>Data preprocessing and feature engineering</li>
+<li>Choose models</li>
+<li>Tune hyperparameters</li>
+<li>Find best performing models</li>
+<li>Evaluate on testing set</li>
+</ul>
 </div>
 </div>
 </section>
@@ -2291,7 +2299,8 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Supervised learning involves data that is labeled and a model attempting to operate using the labeled data to either classify or regress on a known outcome variable.</p>
+<p>Unsupervised learning involves data that is unlabeled and a model attempting to detect patterns in the data without using any labels and outcome variables.</p>
 </div>
 </div>
 </section>
@@ -2310,7 +2319,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Descriptive models look to describe existing relationships in the data.</p>
 </div>
 </div>
 </section>
@@ -2326,7 +2335,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Inferential models evaluate the significance of certain hypothesis.</p>
 </div>
 </div>
 </section>
@@ -2342,7 +2351,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Predictive models use different model types to form a prediction on new data.</p>
 </div>
 </div>
 </section>
@@ -2363,7 +2372,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Mechanistic models use a known formulas and assumptions to most accurately represent the data.</p>
 </div>
 </div>
 </section>
@@ -2380,7 +2389,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Empirically driven models use the data as the information in analysis.</p>
 </div>
 </div>
 </section>
@@ -2397,7 +2406,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>We formally defined mechanistic and parametric models as roughly equivalent, using a formula to characterize the data. We defined empirically driven as equivalent to nonparametric, using the data to create a model.</p>
 </div>
 </div>
 </section>
@@ -2414,7 +2423,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Generally, mechanistic models are easier to interpret due to their known formulas and are often simpler. Empirically driven models are harder to interpret due to their black-box nature.</p>
 </div>
 </div>
 </section>
@@ -2431,7 +2440,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Empirically driven models tend to be more flexible, as they are formed based off of the data itself, whereas mechanistic models have set formulas that are often limiting if the data do not behave in a favorable way.</p>
 </div>
 </div>
 </section>
@@ -2448,7 +2457,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Bias-variance trade-off involves the level of complexity of the model. If a model is too simple, it misrepresents the data, and increases the bias, leading to underfitting. If a model is too complex, the variance increases, leading to overfitting. Our goal in modeling is to minimize both.</p>
 </div>
 </div>
 </section>
@@ -2466,7 +2475,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Regression ML characterizes a continuous outcome variable, while classification characterizes binary or multinomial variables.</p>
 </div>
 </div>
 </section>
@@ -2483,7 +2492,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Stratification is useful for ensuring that the data are accurately represented within the sample, as pure random sampling has the chance of misrepresenting the original data.</p>
 </div>
 </div>
 </section>
@@ -2500,7 +2509,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>v-fold cross validation divides the data into v number of folds and uses v-1 folds for training and 1 fold to test the model. This is repeated with random sampling however many times is desired, and the average of the RMSE values is calculated. We use v-fold cv to reduce overfitting and variance.</p>
 </div>
 </div>
 </section>
@@ -2517,7 +2526,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Bootstrap sampling is preferred when the sample size is relatively small, as cross validation splits the data into folds, which would be ineffective on extremely small datasets. Bootstrap resamples with replacement, which is more effective in this case.</p>
 </div>
 </div>
 </section>
@@ -2534,7 +2543,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Model tuning is running models with varying sets of hyperparameters to develop a more accurate characterization of the data. We tune models to reduce the likelihood of overfitting the data.</p>
 </div>
 </div>
 </section>
@@ -2551,7 +2560,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Two common metrics we have learned for regression problems are Root mean squared error and R-squared.</p>
 </div>
 </div>
 <p>What are two common performance metrics when dealing with a classification ML problem?</p>
@@ -2565,7 +2574,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>The two common performance metrics we have learned for classification are accuracy and area under the receiver operating characteristic curve.</p>
 </div>
 </div>
 </section>
@@ -2586,7 +2595,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>This is an inferential problem, addressing whether high number of service calls significantly impacts likelihood of churn.</p>
 </div>
 </div>
 <ol start="2" type="1">
@@ -2602,7 +2611,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>This is a prediction problem predicting the probability of a customer churning.</p>
 </div>
 </div>
 </section>
