@@ -56,6 +56,22 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 -   Evaluate on testing set
 :::
 
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+4
+
+## Explanation
+
+## Updated solution
+
+*Only required if a 3 or less is scored on the question.*
+
+
+:::
+
 ### Question 2
 
 Explain the difference between supervised and unsupervised learning.
@@ -66,6 +82,19 @@ Explain the difference between supervised and unsupervised learning.
 Supervised learning involves data that is labeled and a model attempting to operate using the labeled data to either classify or regress on a known outcome variable.
 
 Unsupervised learning involves data that is unlabeled and a model attempting to detect patterns in the data without using any labels and outcome variables.
+:::
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+## Updated solution
+
+*Only required if a 3 or less is scored on the question.*
+
+
 :::
 
 ### Question 3
@@ -79,6 +108,7 @@ In general, we can classify a model by its purpose into 1 of the 3 categories be
 
 Descriptive models look to describe existing relationships in the data.
 :::
+
 
 #### Inferential Models
 
@@ -94,6 +124,20 @@ Inferential models evaluate the significance of certain hypothesis.
 ## Solution
 
 Predictive models use different model types to form a prediction on new data.
+:::
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+## Updated solution
+
+*Only required if a 3 or less is scored on the question.*
+
+
 :::
 
 ### Question 4
@@ -160,6 +204,20 @@ Describe the bias-variance trade-off when considering the use of a mechanistic o
 Bias-variance trade-off involves the level of complexity of the model. If a model is too simple, it misrepresents the data, and increases the bias, leading to underfitting. If a model is too complex, the variance increases, leading to overfitting. Our goal in modeling is to minimize both.
 :::
 
+::: {.callout-important icon="false"}
+
+## Score 
+4
+
+## Explanation
+
+## Updated solution
+
+*Only required if a 3 or less is scored on the question.*
+
+
+:::
+
 ### Question 5
 
 Explain the difference between a regression and classification machine learning (ML) problems.
@@ -168,6 +226,20 @@ Explain the difference between a regression and classification machine learning 
 ## Solution
 
 Regression ML characterizes a continuous outcome variable, while classification characterizes binary or multinomial variables.
+:::
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+## Updated solution
+
+*Only required if a 3 or less is scored on the question.*
+
+
 :::
 
 ### Question 6
@@ -180,6 +252,23 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 Stratification is useful for ensuring that the data are accurately represented within the sample, as pure random sampling has the chance of misrepresenting the original data.
 :::
 
+::: {.callout-important icon="false"}
+
+## Score 
+3
+
+## Explanation
+
+Should have mentioned overfitting/underfitting the data. 
+
+## Updated solution
+
+Stratification is useful for ensuring that the data are accurately represented within the sample, as pure random sampling has the chance of misrepresenting the original data. This can also lead to under/overfitting, which can lead to poor model performance.
+
+
+:::
+
+
 ### Question 7
 
 Briefly describe how v-fold cross validation with repeats is used to estimate test RMSE. Also provide an explanation of why we use it.
@@ -189,6 +278,23 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 
 v-fold cross validation divides the data into v number of folds and uses v-1 folds for training and 1 fold to test the model. This is repeated with random sampling however many times is desired, and the average of the RMSE values is calculated. We use v-fold cv to reduce overfitting and variance.
 :::
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+## Updated solution
+
+*Only required if a 3 or less is scored on the question.*
+
+
+:::
+
+
+
 
 ### Question 8
 
@@ -200,6 +306,21 @@ When might we use a bootstrap resampling procedure instead of v-fold cross valid
 Bootstrap sampling is preferred when the sample size is relatively small, as cross validation splits the data into folds, which would be ineffective on extremely small datasets. Bootstrap resamples with replacement, which is more effective in this case.
 :::
 
+::: {.callout-important icon="false"}
+
+## Score 
+4
+
+## Explanation
+Valid solution, just not what the answer key emphasized.
+## Updated solution
+
+*Only required if a 3 or less is scored on the question.*
+
+
+:::
+
+
 ### Question 9
 
 Briefly describe model tuning and why we use it.
@@ -209,6 +330,21 @@ Briefly describe model tuning and why we use it.
 
 Model tuning is running models with varying sets of hyperparameters to develop a more accurate characterization of the data. We tune models to reduce the likelihood of overfitting the data.
 :::
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+## Updated solution
+
+*Only required if a 3 or less is scored on the question.*
+
+
+:::
+
 
 ### Question 10
 
@@ -220,6 +356,21 @@ What are two common performance metrics when dealing with a regression ML proble
 Two common metrics we have learned for regression problems are Root mean squared error and R-squared.
 :::
 
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+## Updated solution
+
+*Only required if a 3 or less is scored on the question.*
+
+
+:::
+
+
 What are two common performance metrics when dealing with a classification ML problem?
 
 ::: {.callout-tip icon="false"}
@@ -227,6 +378,21 @@ What are two common performance metrics when dealing with a classification ML pr
 
 The two common performance metrics we have learned for classification are accuracy and area under the receiver operating characteristic curve.
 :::
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+## Updated solution
+
+*Only required if a 3 or less is scored on the question.*
+
+
+:::
+
 
 ### Question 11
 
@@ -248,4 +414,18 @@ This is an inferential problem, addressing whether high number of service calls 
 ## Solution
 
 This is a prediction problem predicting the probability of a customer churning.
+:::
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+## Updated solution
+
+*Only required if a 3 or less is scored on the question.*
+
+
 :::
